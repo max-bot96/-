@@ -5,7 +5,17 @@ description = "منصة لاتخاذ القرار بالاعتماد على عد
 requires-python = ">=3.13"
 dependencies = [
     "pydantic>=2.0",
+    "aiohttp>=3.9",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
 ]
+
+[project.scripts]
+shurah-api = "apps.api.main:app"
+
+[tool.uvicorn]
+host = "0.0.0.0"
+port = 8000
 
 [tool.setuptools.packages.find]
 where = ["packages"]
