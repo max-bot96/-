@@ -2,7 +2,7 @@
 name = "shurah"
 version = "0.1.0"
 description = "منصة لاتخاذ القرار بالاعتماد على عدة نماذج ذكاء اصطناعي"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "pydantic>=2.0",
     "aiohttp>=3.9",
